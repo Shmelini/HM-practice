@@ -14,6 +14,8 @@ button.addEventListener('click', () => {
 
 // Функционал спойлеров
 function spoiler(event) {
+   event.preventDefault()
+   
    const target = event.target.parentNode.querySelector('.core-spoiler')
    event.target.classList.toggle('open')
    target.classList.toggle('disabled')
@@ -25,6 +27,8 @@ coreSpoilerTriggers.forEach(function (coreSpoilerTrigger) {
 
 // функционал сортировки
 function sortColorChange (event) {
+   event.preventDefault()
+   
    document.querySelectorAll('.sort-btns .selected-sort').forEach(function (removeSelected) {
       removeSelected.classList.remove('selected-sort')
    })
