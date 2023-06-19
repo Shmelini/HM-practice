@@ -1,0 +1,91 @@
+/* Text page */
+.text-container {
+    margin-bottom: 100px;
+    margin-left: 310px;
+    margin-right: 310px;
+}
+
+.text-container a {
+    text-decoration: none;
+}
+
+.text-section-main-content {
+    margin-top: 40px;
+}
+
+.text-section-title {
+    font-family: "Amatic SC";
+    font-size: 88px;
+    font-weight: 700;
+    line-height: 100px;
+}
+
+.text-section-content {
+
+    margin-top: 40px;
+}
+
+.text-section-menu-btn {
+    background-color: #F1F5F8;
+    width: 310px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+.text-section-menu-btn a {
+    font-family: "Gill Sans Nova";
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #3D3D3D;
+}
+
+.text-section-menu-btn:hover {
+    background-color: #193E6B;
+}
+
+.text-section-menu-btn:hover a {
+    color: #FFFFFF;
+}
+
+.text-section-paragraph-group {
+
+    width: 750px;
+}
+
+.text-section-paragraph {
+    font-family: "Gill Sans Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #8B8B8B;
+}
+
+.text-section-paragraph:not(:first-child) {
+    margin-top: 20px;
+}
+
+.text-page-btn {
+    padding: 16px 35px;
+    background-color: #FFFFFF;
+    border: 1px solid #F3CD47;
+    border-radius: 3px;
+    font-family: "Gill Sans Nova";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.text-page-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.text-page-btn:hover {
+    background-color: #F3CD47;
+}
+
+.text-group-btn {
+    margin-top: 40px;
+}

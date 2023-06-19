@@ -1,0 +1,662 @@
+@font-face {
+  font-family: "Gill Sans Nova";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Gill Sans Nova"),
+    /* Если не получилось, загрузит woff2 */
+    url("../fonts/GillSansNova-Book.woff2") format("woff2"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+    url("../fonts/GillSansNova-Book.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gill Sans Nova";
+  font-style: normal;
+  font-weight: 500;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Gill Sans Nova"),
+    /* Если не получилось, загрузит woff2 */
+    url("../fonts/GillSansNova-Medium.woff2") format("woff2"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+    url("../fonts/GillSansNova-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gill Sans Nova";
+  font-style: normal;
+  font-weight: 800;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Gill Sans Nova"),
+    /* Если не получилось, загрузит woff2 */
+    url("../fonts/GillSansNova-Bold.woff2") format("woff2"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+    url("../fonts/GillSansNova-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gill Sans Nova";
+  font-style: normal;
+  font-weight: 900;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Gill Sans Nova"),
+    /* Если не получилось, загрузит woff2 */
+    url("../fonts/GillSansNova-ExtraBold.woff2") format("woff2"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+    url("../fonts/GillSansNova-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Amatic SC";
+  font-style: normal;
+  font-weight: 700;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Amatic SC"),
+    /* Если не получилось, загрузит woff2 */
+    url("../fonts/AmaticSC-Bold.woff2") format("woff2"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+    url("../fonts/AmaticSC-Bold.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  font-family: "Gill Sans Nova";
+}
+
+button {
+  cursor: pointer;
+}
+
+.cross-page-nav {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.cross-page-nav-item {
+  font-family: "Gill Sans Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #3D3D3D;
+  text-decoration: none;
+}
+
+.cross-page-nav-item:not(:last-child)::after {
+  content: '|';
+  display: inline-block;
+  position: relative;
+  margin-left: 22px;
+  margin-right: 22px;
+}
+
+.current-page {
+  color: #8B8B8B;
+}
+
+
+/* Header */
+header {
+  background: #193e6b;
+  display: flex;
+  flex-direction: row;
+  height: 220px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/* Header top */
+.header-logo {
+  margin-top: 36px;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+
+.header-top {
+  height: 60px;
+}
+
+.header-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Gill Sans Nova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-right: 20px;
+}
+
+.header-nav,
+.header-contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-nav a:hover,
+.header-contacts a:hover {
+  color: #F3CD47;
+}
+
+.header-contacts {
+  justify-content: flex-end;
+}
+
+.header-social-mail::before {
+  content: url(../img/mail.svg);
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+
+.header-social-instagram::before {
+  content: url(../img/ant-design_instagram-outlined.svg);
+  display: inline-block;
+  position: relative;
+  margin-right: 5px;
+  top: 3px;
+}
+
+.header-social-phone::before {
+  content: url(../img/phone.svg);
+  display: inline-block;
+  position: relative;
+  margin-right: 5px;
+  top: 3px;
+}
+
+.header-button {
+  height: 50px;
+  width: 200px;
+  left: 1710px;
+  top: 5px;
+  font-family: "Gill Sans Nova";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  background-color: #f3cd47;
+  color: #3d3d3d;
+  border: 1px solid #f3cd47;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+.header-bottom-nav {
+  display: flex;
+}
+
+.header-bottom-nav a:hover {
+  color: #F3CD47;
+}
+
+.button-orange:hover {
+  background-color: #F9E6A3;
+  border-color: #F9E6A3;
+}
+
+.button-orange:focus {
+  background-color: #F1C322;
+  border-color: #F1C322;
+}
+
+/* Header center */
+.header-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: white;
+}
+
+.search-input {
+  height: 60px;
+  width: 504px;
+  left: 711px;
+  top: 80px;
+  background-color: #f1f5f8;
+  border: 1px solid white;
+  border-right: none;
+  border-radius: 2px;
+  padding-left: 15px;
+}
+
+.search-input::-webkit-input-placeholder {
+  color: #8b8b8b;
+  font-family: "Gill Sans Nova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.search-input::-moz-placeholder {
+  color: #8b8b8b;
+  font-family: "Gill Sans Nova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 15px;
+}
+
+/* Firefox 19+ */
+.search-input:-moz-placeholder {
+  color: #8b8b8b;
+  font-family: "Gill Sans Nova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 15px;
+}
+
+/* Firefox 18- */
+.search-input:-ms-input-placeholder {
+  color: #8b8b8b;
+  font-family: "Gill Sans Nova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.search-select {
+  height: 63px;
+  width: 235px;
+  background-color: #f1f5f8;
+  border: 1px solid white;
+  border-left: 1px solid #e5e5e5;
+  color: #8b8b8b;
+  text-align: center;
+}
+
+.search-confirm-button {
+  height: 60px;
+  width: 46px;
+  left: 1450px;
+  top: 80px;
+  background-color: #193e6b;
+  border: 1px solid #193e6b;
+  border-radius: 2px;
+}
+
+/* Header bottom */
+.header-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  font-family: "Gill Sans Nova";
+}
+
+.header-spoiler-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 27px;
+  height: 60px;
+  width: 200px;
+  border: none;
+  background-color: #f3cd47;
+  font-family: "Gill Sans Nova";
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 16px;
+
+}
+
+.catalog-burger {
+  margin-right: 5px;
+}
+
+.header-bottom-nav a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 20px;
+  font-family: "Gill Sans Nova";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.header-bottom-nav a:nth-child(7) {
+  margin-right: 13px;
+}
+
+.b1,
+.b2,
+.b3 {
+  margin-top: 2px;
+  background-color: #3d3d3d;
+  width: 14px;
+  height: 2px;
+  border-radius: 2px;
+}
+
+.disabled {
+  display: none;
+}
+
+
+.header-menu-container {
+  position: absolute;
+  background-color: #FFF3CA;
+  z-index: 3;
+}
+
+.header-menu-left {
+  width: 229px;
+  height: 630px;
+  overflow-y: scroll;
+
+}
+
+.header-menu-parametres {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 229px;
+  width: 1071px;
+  height: 630px;
+  background-color: #FFFBEF;
+  overflow-y: scroll;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.header-menu-categories-container:hover .header-menu-parametres {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header-menu-left::before {
+  content: '';
+  width: 223px;
+  height: 105px;
+  background: linear-gradient(360deg, #FFF3CA 0%, rgba(255, 243, 202, 0) 153.81%);
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+}
+
+.header-menu-left::-webkit-scrollbar,
+.header-menu-parametres::-webkit-scrollbar {
+  width: 6px;
+}
+
+.header-menu-left::-webkit-scrollbar-thumb,
+.header-menu-parametres::-webkit-scrollbar-thumb {
+  background-color: #F3CD47;
+}
+
+.header-menu-left::-webkit-scrollbar-track,
+.header-menu-parametres::-webkit-scrollbar-track {
+  background-color: #E2E2E2;
+}
+
+.header-menu-categories-container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 35px;
+}
+
+.header-menu-categories-container:hover {
+  background-color: #193E6B;
+}
+
+.header-menu-categories-container:hover .header-menu-categories-item {
+  color: #FFFFFF;
+}
+
+.header-menu-categories-item {
+  font-family: "Gill Sans Nova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: none;
+  color: #3d3d3d;
+}
+
+.header-menu-parametres-item {
+  width: 222px;
+  margin-top: 30px;
+
+}
+
+.sub-categories-title {
+  font-family: "Gill Sans Nova";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.sub-categories-list a {
+  font-family: "Gill Sans Nova";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: none;
+  color: #8B8B8B;
+}
+
+.sub-categories-list a:hover {
+  color: #193E6B;
+}
+
+.sub-categories-list li:first-child {
+  margin-top: 15px;
+}
+
+.sub-categories-list li {
+  margin-top: 10px;
+}
+
+.spoiler-categories ul {
+  margin-left: 27px;
+}
+
+.spoiler-categories li::before {
+  content: '';
+  background-color: #8B8B8B;
+  display: inline-block;
+  position: relative;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  top: -2px;
+  margin-right: 10px;
+}
+
+.active {
+  color: #193E6B !important;
+}
+
+
+/* Footer */
+footer {
+  background-color: #193E6B;
+
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 310px;
+  margin-right: 310px;
+  height: 392px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer a:hover {
+  color: #F3CD47;
+}
+
+.footer-logo {
+  margin-top: 50px;
+}
+
+.footer-contacts {
+  margin-top: 20px;
+  width: 223px;
+  font-family: "Gill Sans Nova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 188%;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.footer-contacts li {
+  margin-top: 10px;
+}
+
+.footer-social-links__link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-links__yt::before,
+.footer-social-links__vk::before,
+.footer-social-links__ok::before,
+.footer-social-links__instagram::before {
+  content: '';
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  position: relative;
+}
+
+.footer-social-links__yt::before {
+  background-image: url(../img/YouTube.svg);
+}
+
+.footer-social-links__vk::before {
+  background-image: url(../img/Vkontakte\ \(VK\).svg);
+}
+
+.footer-social-links__ok::before {
+  background-image: url(../img/Odnoklassniki\ \(OK\).svg);
+}
+
+.footer-social-links__instagram::before {
+  background-image: url(../img/Instagram.svg);
+}
+
+.footer-catalogue {
+  margin-top: 80px;
+}
+
+.footer-catalogue h3 {
+  font-family: "Amatic SC";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.footer-catalogue__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 213px;
+  height: 185px;
+  font-family: "Gill Sans Nova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.footer-catalogue__list li {
+  margin-top: 10px;
+  margin-right: 31px;
+}
+
+.footer-social-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-social-links__link {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-help {
+  margin-top: 80px;
+}
+
+.footer-help h3 {
+  font-family: "Amatic SC";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.footer-help_list li {
+  font-family: "Gill Sans Nova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  margin-top: 10px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.footer-links ul {
+  margin-top: 80px;
+}
+
+.footer-links li {
+  margin-top: 15px;
+  font-family: "Amatic SC";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #FFFFFF;
+
+}
+
+.footer-copyright {
+  padding-top: 8px;
+  padding-bottom: 9px;
+  text-align: center;
+  font-family: "Gill Sans Nova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  background: #f3cd47;
+}

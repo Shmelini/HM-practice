@@ -1,0 +1,96 @@
+/* Text page */
+.text-container {
+    margin-bottom: 100px;
+    margin-left: 310px;
+    margin-right: 310px;
+  }
+  
+  .text-container a {
+    text-decoration: none;
+  }
+  
+  .cross-page-nav {
+    margin-top: 30px;
+  }
+  
+  .cross-page-nav-item {
+    font-family: "Gill Sans Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3D3D3D;
+  }
+  
+  .cross-page-nav-item:not(:last-child)::after {
+    content: '|';
+    display: inline-block;
+    position: relative;
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+  
+  .current-page {
+    color: #8B8B8B;
+  }
+  
+  .text-section-main-content {
+    margin-top: 40px;
+  }
+  
+  .text-section-title {
+    font-family: "Amatic SC";
+    font-size: 88px;
+    font-weight: 700;
+    line-height: 100px;
+  }
+  
+  .text-section-content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+  }
+  
+  .text-section-menu-btn {
+    background-color: #F1F5F8;
+    width: 310px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+  }
+  
+  .text-section-menu-btn a {
+    font-family: "Gill Sans Nova";
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #3D3D3D;
+  }
+  
+  .text-section-menu-btn:hover {
+    background-color: #193E6B;
+  }
+  
+  .text-section-menu-btn:hover a {
+    color: #FFFFFF;
+  }
+  
+  .text-section-paragraph-group {
+    margin-left: 50px;
+    width: 750px;
+  }
+  
+  .text-section-paragraph {
+    font-family: "Gill Sans Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #8B8B8B;
+  }
+  
+  .text-section-paragraph:not(:first-child) {
+    margin-top: 20px;
+  }
+  
+  

@@ -1,0 +1,380 @@
+.catalog-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.settings-container {
+    margin-right: 20px;
+}
+
+.setting-block {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 310px;
+    background-color: #F1F5F8;
+}
+
+
+
+.setting-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    width: 270px;
+    font-family: "Gill Sans Nova";
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    text-decoration: none;
+    color: #3D3D3D;
+}
+
+.setting-name::after {
+    content: ' ';
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.open::after {
+    rotate: 180deg;
+}
+
+
+.list-arrow {
+    margin-top: 16px;
+    margin-right: 20px;
+    background-image: url(../img/Vector.svg);
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
+
+.settings-list {
+    background-color: #F1F5F8;
+}
+
+.setting-button {
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 9px 89px 11px 89px;
+    font-family: "Gill Sans Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    border: none;
+    background-color: #F3CD47;
+    border-radius: 3px;
+}
+
+.cost-range-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.cost-input {
+    font-family: "Gill Sans Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+
+
+    padding-left: 36px;
+    width: 82px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.cost-range-divider {
+    width: 4px;
+    height: 1.5px;
+    background-color: #000000;
+}
+
+.settings-color-item {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: "Gill Sans Nova";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.settings-color-item:first-child {
+    margin-top: 22px;
+}
+
+.settings-color-item:last-child {
+    margin-bottom: 30px;
+}
+
+.checkbox-custom:checked,
+.checkbox-custom:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.checkbox-custom:checked+.checkbox-custom-label,
+.checkbox-custom:not(:checked)+.checkbox-custom-label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.checkbox-custom:checked+.checkbox-custom-label {
+    color: #193E6B;
+}
+
+
+.checkbox-custom:not(:checked)+.checkbox-custom-label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/check-def.svg);
+}
+
+.checkbox-custom:hover+.checkbox-custom-label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/check-hover.svg);
+}
+
+.checkbox-custom:checked+.checkbox-custom-label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/check-check.svg);
+}
+
+.checkbox-custom-label {
+    font-family: "Gill Sans Nova";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #3D3D3D;
+}
+
+.checkbox-custom-label:hover {
+    color: #000000;
+}
+
+.settings-color-list .setting-button {
+    margin-top: 30px;
+}
+
+.product-category-item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.product-category-link {
+    margin-left: 20px;
+
+    font-family: "Gill Sans Nova";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-decoration: none;
+    color: #3D3D3D;
+}
+
+.product-category-link:hover {
+    color: #193E6B;
+}
+
+.current-category {
+    background-color: #193E6B;
+}
+
+.current-category .product-category-link {
+    color: #FFFFFF;
+}
+
+.sort-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sort-btns div {
+    color: #8B8B8B;
+}
+
+.sort-btn {
+    margin-left: 10px;
+    padding: 9px 15px 11px 15px;
+    font-family: "Gill Sans Nova";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    text-decoration: none;
+    color: #3D3D3D;
+    background-color: #F1F5F8;
+    border-radius: 3px;
+
+}
+
+.sort-btn:hover {
+    color: #193E6B;
+}
+
+.selected-sort {
+    background-color: #F3CD47;
+}
+
+.products-container {
+    margin-left: 310px;
+}
+
+.products-section-title {
+    font-family: "Amatic SC";
+    font-size: 88px;
+    font-weight: 700;
+    line-height: 100px;
+}
+
+.products-section-list-container {
+    margin-top: 40px;
+}
+
+.products-section-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products-section-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 21px;
+    width: 290px;
+    background-color: #FFFFFF;
+}
+
+.products-section-item:hover {
+    box-shadow: 0px 25px 45px -16px rgba(25, 62, 107, 0.25);
+}
+
+.products-item-img {
+    width: 250px;
+    height: 250px;
+}
+
+.products-item-name {
+    font-family: "Gill Sans Nova";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.products-select {
+    margin-top: 20px;
+    padding-left: 15px;
+    width: 270px;
+    height: 50px;
+    font-family: "Gill Sans Nova";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    border: 1px solid #8B8B8B;
+    border-radius: 3px;
+    color: #8B8B8B;
+}
+
+.products-btns-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.products-btn-price {
+    margin-right: 10px;
+    padding: 15px 35px;
+    background-color: #F3CD47;
+    border: none;
+    border-radius: 3px;
+    font-family: "Gill Sans Nova";
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 34px;
+    color: #3D3D3D;
+}
+
+.products-btn-price:hover {
+    background-color: #F9E6A3;
+}
+
+.products-btn-price:focus {
+    background-color: #F1C322;
+}
+
+.products-btn-bag {
+    width: 100px;
+    height: 66px;
+    background-image: url(../img/shopping-bag.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #193E6B;
+    border: none;
+    border-radius: 3px;
+
+}
+
+.products-btn {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: 418px;
+    padding: 22px 35px;
+    font-family: "Gill Sans Nova";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    background-color: white;
+    border: 1px solid #F3CD47;
+    border-radius: 2px;
+}
+
+.products-btn:hover {
+    background-color: #F9E6A3;
+    border-color: #F9E6A3;
+}
+
+.products-btn:focus {
+    background-color: #F1C322;
+}
+
+.products-btn:disabled {
+    color: #8B8B8B;
+    border-color: #8B8B8B;
+}

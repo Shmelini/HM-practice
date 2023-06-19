@@ -1,0 +1,79 @@
+.articles-container {
+
+    margin-left: 310px;
+}
+
+.articles-container a {
+    text-decoration: none;
+}
+
+.articles-section-title {
+    margin-top: 40px;
+    font-family: "Amatic SC";
+    font-size: 88px;
+    font-weight: 700;
+    line-height: 100px;
+}
+
+.articles-section-list-container {
+    margin-top: 40px;
+}
+
+.articles-section-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.articles-section-list li {
+    width: 420px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.articles-img-wrap {
+    position: relative;
+}
+
+.articles-date {
+    font-family: "Gill Sans Nova";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 5px 10px;
+    background-color: #F3CD47;
+    border-radius: 3px;
+}
+
+.articles-title {
+    margin-top: 15px;
+    font-family: "Gill Sans Nova";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.articles-text {
+    margin-top: 5px;
+    font-family: "Gill Sans Nova";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #8B8B8B;
+}
+
+.articles-btn {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: 563px;
+    padding: 22px 35px;
+    font-family: "Gill Sans Nova";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    background-color: white;
+    border: 1px solid #F3CD47;
+    border-radius: 2px;
+}

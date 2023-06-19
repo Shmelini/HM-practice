@@ -1,0 +1,93 @@
+.contacts-container {
+    margin-left: 306px;
+}
+
+.contacts-section-title {
+    margin-left: 4px;
+    font-family: "Amatic SC";
+    font-size: 88px;
+    font-weight: 700;
+    line-height: 100px;
+}
+
+.cross-page-nav {
+    margin-left: 4px;
+}
+
+.contacts-adress {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.contacts-info {
+    margin-right: 20px;
+    width: 424px;
+    height: 432px;
+    background-color: #F1F5F8;
+}
+
+.contacts-list {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.contacts-list-item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.info-name {
+    font-family: "Gill Sans Nova";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.info {
+    margin-top: 10px;
+    font-family: "Gill Sans Nova";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-decoration: none;
+    color: #8B8B8B;
+}
+
+.contacts-social-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts-social-links__link:not(:last-child) {
+    margin-right: 10px;
+}
+
+.contacts-social-links__yt::before,
+.contacts-social-links__vk::before,
+.contacts-social-links__ok::before,
+.contacts-social-links__instagram::before {
+    content: '';
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    position: relative;
+}
+
+.contacts-social-links__yt::before {
+    background-image: url(../img/YouTube-contacts.svg);
+}
+
+.contacts-social-links__vk::before {
+    background-image: url(../img/Vkontakte\ \(VK\)-contacts.svg);
+}
+
+.contacts-social-links__ok::before {
+    background-image: url(../img/Odnoklassniki\ \(OK\)-contacts.svg);
+}
+
+.contacts-social-links__instagram::before {
+    background-image: url(../img/Instagram-contacts.svg);
+}
