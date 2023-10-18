@@ -25,18 +25,6 @@
 @font-face {
   font-family: "Gill Sans Nova";
   font-style: normal;
-  font-weight: 800;
-  /* Браузер сначала попробует найти шрифт локально */
-  src: local("Gill Sans Nova"),
-    /* Если не получилось, загрузит woff2 */
-    url("../fonts/GillSansNova-Bold.woff2") format("woff2"),
-    /* Если браузер не поддерживает woff2, загрузит woff */
-    url("../fonts/GillSansNova-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Gill Sans Nova";
-  font-style: normal;
   font-weight: 900;
   /* Браузер сначала попробует найти шрифт локально */
   src: local("Gill Sans Nova"),
@@ -44,6 +32,18 @@
     url("../fonts/GillSansNova-ExtraBold.woff2") format("woff2"),
     /* Если браузер не поддерживает woff2, загрузит woff */
     url("../fonts/GillSansNova-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gill Sans Nova";
+  font-style: normal;
+  font-weight: 800;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Gill Sans Nova"),
+    /* Если не получилось, загрузит woff2 */
+    url("../fonts/GillSansNova-CnHeavy.woff2") format("woff2"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+    url("../fonts/GillSansNova-CnHeavy.woff") format("woff");
 }
 
 @font-face {
@@ -659,4 +659,19 @@ footer {
   font-weight: 400;
   line-height: 23px;
   background: #f3cd47;
+}
+
+.btn-yellow-border:hover {
+  background-color: #F9E6A3;
+  border-color: #F9E6A3;
+}
+
+.btn-yellow-border:focus {
+  background-color: #F1C322;
+  border-color: #F1C322;
+}
+
+.btn-yellow-border:disabled {
+  color: #8B8B8B;
+  border-color: #8B8B8B;
 }

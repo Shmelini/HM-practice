@@ -3,21 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Хобби-Маркет</title>
+    <title>Пряжа</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/catalog.css">
-    <script defer src="../script/script.js"></script>
+    <link rel="stylesheet" href="../css/knitting.css">
+    <link rel="stylesheet" href="../css/product_page.css">
 </head>
 
 <body>
     <!-- Header -->
-    <section>
+    <div>
         <header>
             <div class="header-logo">
                 <a href="../html/index.html"><img src="../img/лого хобби маркет  1.png" alt="Лого Хобби Маркет"></a>
@@ -302,427 +301,221 @@
                 </div>
             </div>
         </header>
-    </section>
+    </div>
 
-    <!-- Catalog -->
-    <section>
-        <div class="catalog-container">
+
+    <div>
+
+    </div>
+
+    <div class="product-section">
+
+        <!-- Product -->
+        <div class="product-card">
             <div class="cross-page-nav">
                 <nav>
                     <a class="cross-page-nav-item" href="../html/index.html">Главная</a>
-                    <a class="cross-page-nav-item current-page"
-                        href="../html/text page(with prevnext btns).html">Каталог</a>
+                    <a class="cross-page-nav-item" href="../html/catalog.html">Каталог</a>
+                    <a class="cross-page-nav-item" href="../html/knitting.html">Вязание</a>
+                    <a class="cross-page-nav-item current-page" href="../html/product_page.html">Пряжа "Gamma" Ирис 100%
+                        хлопок 10 г 82 м</a>
                 </nav>
             </div>
-            <h2 class="catalog-section-title">Каталог</h2>
-            <ul class="catalog-items-list">
-                <li>
-                    <a href="../html/knitting.html">
-                        <div class="catalog-item">
-                            <div class="catalog-img-item-container"><img class="catalog-item-img"
-                                    src="../img/image 1.png" alt="">
+            <h2 class="product-name">Пряжа "Gamma" Ирис 100% хлопок 10 г 82 м</h2>
+            <!-- Product info -->
+            <div class="product-info">
+                <!-- Swiper -->
+                <div class="swiper-main-container">
+                    <div class="swiper-product swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-product-slide swiper-slide">
+                                <img class="swiper-product-slide__img" src="../img/Rectangle 1508.png" alt="">
                             </div>
-                            <div class="catalog-item-title">Вязание</div>
+                            <div class="swiper-product-slide swiper-slide">
+                                <img class="swiper-product-slide__img" src="../img/Rectangle 1508.png" alt="">
+                            </div>
+                            <div class="swiper-product-slide swiper-slide">
+                                <img class="swiper-product-slide__img" src="../img/Rectangle 1508.png" alt="">
+                            </div>
+                            <div class="swiper-product-slide swiper-slide">
+                                <img class="swiper-product-slide__img" src="../img/Rectangle 1508.png" alt="">
+                            </div>
+                            <div class="swiper-product-slide swiper-slide">
+                                <img class="swiper-product-slide__img" src="../img/Rectangle 1508.png" alt="">
+                            </div>
+                            ...
                         </div>
-                    </a>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination-product swiper-pagination"></div>
+                    </div>
+                    <div thumbsSLider="" class="swiper-thumbs swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-thumbs-slide swiper-slide">
+                                <img class="swiper-thumbs-slide__img" src="../img/Rectangle 1508.png" alt="">
+                            </div>
+                            <div class="swiper-thumbs-slide swiper-slide">
+                                <img class="swiper-thumbs-slide__img" src="../img/Rectangle 1508.png" alt="">
+                            </div>
+                            <div class="swiper-thumbs-slide swiper-slide">
+                                <img class="swiper-thumbs-slide__img" src="../img/Rectangle 1508.png" alt="">
+                            </div>
+                            <div class="swiper-thumbs-slide swiper-slide">
+                                <img class="swiper-thumbs-slide__img" src="../img/Rectangle 1508.png" alt="">
+                            </div>
+                            <div class="swiper-thumbs-slide swiper-slide">
+                                <img class="swiper-thumbs-slide__img" src="../img/Rectangle 1508.png" alt="">
+                            </div>
+                            ...
+                        </div>
+                    </div>
+                </div>
+                <div class="product-input">
+                    <span class="product-vendor-code">Артикул: 123456789</span>
+                    <button class="products-btn-price">71 ₽/шт</button>
+                    <select class="products-select name=" products-select" id="products-select">
+                        <option value="">Выберите цвет: </option>
+                        <option value="">Белый</option>
+                        <option value="">Синий</option>
+                        <option value="">Красный</option>
+                        <option value="">Черный</option>
+                        <option value="">Фиолетовый</option>
+                    </select>
+                    <div class="amount">
+                        <span class="amount-name">Количество</span>
+                        <div class="amount-btn-container">
+                            <button class="amount-btn">-</button>
+                            <div class="amount-number">1</div>
+                            <button class="amount-btn">+</button>
+                        </div>
+                        <div class="product-buy-btns">
+                            <button class="product-btn__cart">В корзину</button>
+                            <button class="product-btn__buy btn-yellow-border">Купить в 1 клик</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Description -->
+        <div class="description-section">
+            <ul class="description-btns-list">
+                <li class="description-btn-item"><button class="description-btn description-btn__active"
+                        data-relation="description" id="disc-btn">Описание</button></li>
+                <li class="description-btn-item"><button class="description-btn" data-relation="char"
+                        id="char-btn">Характеристики</button></li>
+            </ul>
+            <div class="description-text-container">
+                <p class="description-text text-active" data-relation="description">Учитывая ключевые сценарии
+                    поведения, убеждённость некоторых оппонентов требует
+                    определения и уточнения
+                    как самодостаточных, так и внешне зависимых концептуальных решений. Следует отметить, что
+                    существующая
+                    теория обеспечивает актуальность переосмысления внешнеэкономических политик. В своём стремлении
+                    повысить
+                    качество жизни, они забывают, что перспективное планирование создаёт предпосылки для
+                    глубокомысленных
+                    рассуждений.
+                </p>
+                <p class="description-text " data-relation="char">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo alias amet neque consectetur molestias
+                    repellendus iste architecto minima? Quo cumque ipsum aspernatur aut praesentium reiciendis sapiente
+                    facilis delectus. Dignissimos, possimus?
+                </p>
+            </div>
+        </div>
+
+        <!-- browsing history -->
+        <div class="browsing-section">
+            <h3 class="browsing-title">Вы недавно смотрели</h3>
+            <ul class="browsing-list">
+                <li class="products-section-item browsing-item">
+                    <img class="products-item-img" src="../img/g948588632 1.png" alt="Пряжа">
+                    <h3 class="products-item-name">Пряжа "Gamma" Ирис
+                        100% хлопок 10 г 82 м
+                    </h3>
+                    <select class="products-select name=" products-select" id="products-select">
+                        <option value="">Выберите цвет: </option>
+                        <option value="">Белый</option>
+                        <option value="">Синий</option>
+                        <option value="">Красный</option>
+                        <option value="">Черный</option>
+                        <option value="">Фиолетовый</option>
+                    </select>
+                    <div class="products-btns-group">
+                        <button class="products-btn-price">71 ₽/шт</button>
+                        <button class="products-btn-bag"></button>
+
+                    </div>
                 </li>
-                <li>
-                    <a href="../html/knitting.html">
-                        <div class="catalog-item">
-                            <div class="catalog-img-item-container"><img class="catalog-item-img"
-                                    src="../img/image 1.png" alt="">
-                            </div>
-                            <div class="catalog-item-title">Вязание</div>
-                        </div>
-                    </a>
+                <li class="products-section-item browsing-item">
+                    <img class="products-item-img" src="../img/g948588632 1.png" alt="Пряжа">
+                    <h3 class="products-item-name">Пряжа "Gamma" Ирис
+                        100% хлопок 10 г 82 м
+                    </h3>
+                    <select class="products-select name=" products-select" id="products-select">
+                        <option value="">Выберите цвет: </option>
+                        <option value="">Белый</option>
+                        <option value="">Синий</option>
+                        <option value="">Красный</option>
+                        <option value="">Черный</option>
+                        <option value="">Фиолетовый</option>
+                    </select>
+                    <div class="products-btns-group">
+                        <button class="products-btn-price">71 ₽/шт</button>
+                        <button class="products-btn-bag"></button>
+
+                    </div>
                 </li>
-                <li>
-                    <a href="../html/knitting.html">
-                        <div class="catalog-item">
-                            <div class="catalog-img-item-container"><img class="catalog-item-img"
-                                    src="../img/image 1.png" alt="">
-                            </div>
-                            <div class="catalog-item-title">Вязание</div>
-                        </div>
-                    </a>
+                <li class="products-section-item browsing-item">
+                    <img class="products-item-img" src="../img/g948588632 1.png" alt="Пряжа">
+                    <h3 class="products-item-name">Пряжа "Gamma" Ирис
+                        100% хлопок 10 г 82 м
+                    </h3>
+                    <select class="products-select name=" products-select" id="products-select">
+                        <option value="">Выберите цвет: </option>
+                        <option value="">Белый</option>
+                        <option value="">Синий</option>
+                        <option value="">Красный</option>
+                        <option value="">Черный</option>
+                        <option value="">Фиолетовый</option>
+                    </select>
+                    <div class="products-btns-group">
+                        <button class="products-btn-price">71 ₽/шт</button>
+                        <button class="products-btn-bag"></button>
+
+                    </div>
                 </li>
-                <li>
-                    <a href="../html/knitting.html">
-                        <div class="catalog-item">
-                            <div class="catalog-img-item-container"><img class="catalog-item-img"
-                                    src="../img/image 1.png" alt="">
-                            </div>
-                            <div class="catalog-item-title">Вязание</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="../html/knitting.html">
-                        <div class="catalog-item">
-                            <div class="catalog-img-item-container"><img class="catalog-item-img"
-                                    src="../img/image 1.png" alt="">
-                            </div>
-                            <div class="catalog-item-title">Вязание</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="../html/knitting.html">
-                        <div class="catalog-item">
-                            <div class="catalog-img-item-container"><img class="catalog-item-img"
-                                    src="../img/image 1.png" alt="">
-                            </div>
-                            <div class="catalog-item-title">Вязание</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="../html/knitting.html">
-                        <div class="catalog-item">
-                            <div class="catalog-img-item-container"><img class="catalog-item-img"
-                                    src="../img/image 1.png" alt="">
-                            </div>
-                            <div class="catalog-item-title">Вязание</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="../html/knitting.html">
-                        <div class="catalog-item">
-                            <div class="catalog-img-item-container"><img class="catalog-item-img"
-                                    src="../img/image 1.png" alt="">
-                            </div>
-                            <div class="catalog-item-title">Вязание</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="../html/knitting.html">
-                        <div class="catalog-item">
-                            <div class="catalog-img-item-container"><img class="catalog-item-img"
-                                    src="../img/image 1.png" alt="">
-                            </div>
-                            <div class="catalog-item-title">Вязание</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="../html/knitting.html">
-                        <div class="catalog-item">
-                            <div class="catalog-img-item-container"><img class="catalog-item-img"
-                                    src="../img/image 1.png" alt="">
-                            </div>
-                            <div class="catalog-item-title">Вязание</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="../html/knitting.html">
-                        <div class="catalog-item">
-                            <div class="catalog-img-item-container"><img class="catalog-item-img"
-                                    src="../img/image 1.png" alt="">
-                            </div>
-                            <div class="catalog-item-title">Вязание</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="../html/knitting.html">
-                        <div class="catalog-item">
-                            <div class="catalog-img-item-container"><img class="catalog-item-img"
-                                    src="../img/image 1.png" alt="">
-                            </div>
-                            <div class="catalog-item-title">Вязание</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="../html/knitting.html">
-                        <div class="catalog-item">
-                            <div class="catalog-img-item-container"><img class="catalog-item-img"
-                                    src="../img/image 1.png" alt="">
-                            </div>
-                            <div class="catalog-item-title">Вязание</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="../html/knitting.html">
-                        <div class="catalog-item">
-                            <div class="catalog-img-item-container"><img class="catalog-item-img"
-                                    src="../img/image 1.png" alt="">
-                            </div>
-                            <div class="catalog-item-title">Вязание</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="../html/knitting.html">
-                        <div class="catalog-item">
-                            <div class="catalog-img-item-container"><img class="catalog-item-img"
-                                    src="../img/image 1.png" alt="">
-                            </div>
-                            <div class="catalog-item-title">Вязание</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="../html/knitting.html">
-                        <div class="catalog-item">
-                            <div class="catalog-img-item-container"><img class="catalog-item-img"
-                                    src="../img/image 1.png" alt="">
-                            </div>
-                            <div class="catalog-item-title">Вязание</div>
-                        </div>
-                    </a>
+                <li class="products-section-item browsing-item">
+                    <img class="products-item-img" src="../img/g948588632 1.png" alt="Пряжа">
+                    <h3 class="products-item-name">Пряжа "Gamma" Ирис
+                        100% хлопок 10 г 82 м
+                    </h3>
+                    <select class="products-select name=" products-select" id="products-select">
+                        <option value="">Выберите цвет: </option>
+                        <option value="">Белый</option>
+                        <option value="">Синий</option>
+                        <option value="">Красный</option>
+                        <option value="">Черный</option>
+                        <option value="">Фиолетовый</option>
+                    </select>
+                    <div class="products-btns-group">
+                        <button class="products-btn-price">71 ₽/шт</button>
+                        <button class="products-btn-bag"></button>
+
+                    </div>
                 </li>
             </ul>
         </div>
-    </section>
 
-    <!-- Products -->
-    <section class="products-section">
-        <div class="products-container">
-            <h2 class="products-section-title">Продукция</h2>
-            <div class="products-section-list-container">
-                <ul class="products-section-list">
-                    <li class="products-section-item">
-                        <img class="products-item-img" src="../img/g948588632 1.png" alt="Пряжа">
-                        <h3 class="products-item-name">Пряжа "Gamma" Ирис
-                            100% хлопок 10 г 82 м
-                        </h3>
-                        <select class="products-select name=" products-select" id="products-select">
-                            <option value="">Выберите цвет: </option>
-                            <option value="">Белый</option>
-                            <option value="">Синий</option>
-                            <option value="">Красный</option>
-                            <option value="">Черный</option>
-                            <option value="">Фиолетовый</option>
-                        </select>
-                        <div class="products-btns-group">
-                            <button class="products-btn-price">71 ₽/шт</button>
-                            <button class="products-btn-bag"></button>
 
-                        </div>
-                    </li>
-                    <li class="products-section-item">
-                        <img class="products-item-img" src="../img/g948588632 1.png" alt="Пряжа">
-                        <h3 class="products-item-name">Пряжа "Gamma" Ирис
-                            100% хлопок 10 г 82 м
-                        </h3>
-                        <select class="products-select" name="products-select" id="products-select">
-                            <option disabled selected value="">Выберите цвет: </option>
-                            <option value="">Белый</option>
-                            <option value="">Синий</option>
-                            <option value="">Красный</option>
-                            <option value="">Черный</option>
-                            <option value="">Фиолетовый</option>
-                        </select>
-                        <div class="products-btns-group">
-                            <button class="products-btn-price">71 ₽/шт</button>
-                            <button class="products-btn-bag"></button>
-
-                        </div>
-                    </li>
-                    <li class="products-section-item">
-                        <img class="products-item-img" src="../img/g948588632 1.png" alt="Пряжа">
-                        <h3 class="products-item-name">Пряжа "Gamma" Ирис
-                            100% хлопок 10 г 82 м
-                        </h3>
-                        <select class="products-select" name="products-select" id="products-select">
-                            <option disabled selected value="">Выберите цвет: </option>
-                            <option value="">Белый</option>
-                            <option value="">Синий</option>
-                            <option value="">Красный</option>
-                            <option value="">Черный</option>
-                            <option value="">Фиолетовый</option>
-                        </select>
-                        <div class="products-btns-group">
-                            <button class="products-btn-price">71 ₽/шт</button>
-                            <button class="products-btn-bag"></button>
-
-                        </div>
-                    </li>
-                    <li class="products-section-item">
-                        <img class="products-item-img" src="../img/g948588632 1.png" alt="Пряжа">
-                        <h3 class="products-item-name">Пряжа "Gamma" Ирис
-                            100% хлопок 10 г 82 м
-                        </h3>
-                        <select class="products-select" name="products-select" id="products-select">
-                            <option disabled selected value="">Выберите цвет: </option>
-                            <option value="">Белый</option>
-                            <option value="">Синий</option>
-                            <option value="">Красный</option>
-                            <option value="">Черный</option>
-                            <option value="">Фиолетовый</option>
-                        </select>
-                        <div class="products-btns-group">
-                            <button class="products-btn-price">71 ₽/шт</button>
-                            <button class="products-btn-bag"></button>
-
-                        </div>
-                    </li>
-                    <li class="products-section-item">
-                        <img class="products-item-img" src="../img/g948588632 1.png" alt="Пряжа">
-                        <h3 class="products-item-name">Пряжа "Gamma" Ирис
-                            100% хлопок 10 г 82 м
-                        </h3>
-                        <select class="products-select" name="products-select" id="products-select">
-                            <option disabled selected value="">Выберите цвет: </option>
-                            <option value="">Белый</option>
-                            <option value="">Синий</option>
-                            <option value="">Красный</option>
-                            <option value="">Черный</option>
-                            <option value="">Фиолетовый</option>
-                        </select>
-                        <div class="products-btns-group">
-                            <button class="products-btn-price">71 ₽/шт</button>
-                            <button class="products-btn-bag"></button>
-
-                        </div>
-                    </li>
-                    <li class="products-section-item">
-                        <img class="products-item-img" src="../img/g948588632 1.png" alt="Пряжа">
-                        <h3 class="products-item-name">Пряжа "Gamma" Ирис
-                            100% хлопок 10 г 82 м
-                        </h3>
-                        <select class="products-select" name="products-select" id="products-select">
-                            <option disabled selected value="">Выберите цвет: </option>
-                            <option value="">Белый</option>
-                            <option value="">Синий</option>
-                            <option value="">Красный</option>
-                            <option value="">Черный</option>
-                            <option value="">Фиолетовый</option>
-                        </select>
-                        <div class="products-btns-group">
-                            <button class="products-btn-price">71 ₽/шт</button>
-                            <button class="products-btn-bag"></button>
-
-                        </div>
-                    </li>
-                    <li class="products-section-item">
-                        <img class="products-item-img" src="../img/g948588632 1.png" alt="Пряжа">
-                        <h3 class="products-item-name">Пряжа "Gamma" Ирис
-                            100% хлопок 10 г 82 м
-                        </h3>
-                        <select class="products-select" name="products-select" id="products-select">
-                            <option disabled selected value="">Выберите цвет: </option>
-                            <option value="">Белый</option>
-                            <option value="">Синий</option>
-                            <option value="">Красный</option>
-                            <option value="">Черный</option>
-                            <option value="">Фиолетовый</option>
-                        </select>
-                        <div class="products-btns-group">
-                            <button class="products-btn-price">71 ₽/шт</button>
-                            <button class="products-btn-bag"></button>
-
-                        </div>
-                    </li>
-                    <li class="products-section-item">
-                        <img class="products-item-img" src="../img/g948588632 1.png" alt="Пряжа">
-                        <h3 class="products-item-name">Пряжа "Gamma" Ирис
-                            100% хлопок 10 г 82 м
-                        </h3>
-                        <select class="products-select" name="products-select" id="products-select">
-                            <option disabled selected value="">Выберите цвет: </option>
-                            <option value="">Белый</option>
-                            <option value="">Синий</option>
-                            <option value="">Красный</option>
-                            <option value="">Черный</option>
-                            <option value="">Фиолетовый</option>
-                        </select>
-                        <div class="products-btns-group">
-                            <button class="products-btn-price">71 ₽/шт</button>
-                            <button class="products-btn-bag"></button>
-
-                        </div>
-                    </li>
-                    <li class="products-section-item">
-                        <img class="products-item-img" src="../img/g948588632 1.png" alt="Пряжа">
-                        <h3 class="products-item-name">Пряжа "Gamma" Ирис
-                            100% хлопок 10 г 82 м
-                        </h3>
-                        <select class="products-select" name="products-select" id="products-select">
-                            <option disabled selected value="">Выберите цвет: </option>
-                            <option value="">Белый</option>
-                            <option value="">Синий</option>
-                            <option value="">Красный</option>
-                            <option value="">Черный</option>
-                            <option value="">Фиолетовый</option>
-                        </select>
-                        <div class="products-btns-group">
-                            <button class="products-btn-price">71 ₽/шт</button>
-                            <button class="products-btn-bag"></button>
-
-                        </div>
-                    </li>
-                    <li class="products-section-item">
-                        <img class="products-item-img" src="../img/g948588632 1.png" alt="Пряжа">
-                        <h3 class="products-item-name">Пряжа "Gamma" Ирис
-                            100% хлопок 10 г 82 м
-                        </h3>
-                        <select class="products-select" name="products-select" id="products-select">
-                            <option disabled selected value="">Выберите цвет: </option>
-                            <option value="">Белый</option>
-                            <option value="">Синий</option>
-                            <option value="">Красный</option>
-                            <option value="">Черный</option>
-                            <option value="">Фиолетовый</option>
-                        </select>
-                        <div class="products-btns-group">
-                            <button class="products-btn-price">71 ₽/шт</button>
-                            <button class="products-btn-bag"></button>
-
-                        </div>
-                    </li>
-                    <li class="products-section-item">
-                        <img class="products-item-img" src="../img/g948588632 1.png" alt="Пряжа">
-                        <h3 class="products-item-name">Пряжа "Gamma" Ирис
-                            100% хлопок 10 г 82 м
-                        </h3>
-                        <select class="products-select" name="products-select" id="products-select">
-                            <option disabled selected value="">Выберите цвет: </option>
-                            <option value="">Белый</option>
-                            <option value="">Синий</option>
-                            <option value="">Красный</option>
-                            <option value="">Черный</option>
-                            <option value="">Фиолетовый</option>
-                        </select>
-                        <div class="products-btns-group">
-                            <button class="products-btn-price">71 ₽/шт</button>
-                            <button class="products-btn-bag"></button>
-
-                        </div>
-                    </li>
-                    <li class="products-section-item">
-                        <img class="products-item-img" src="../img/g948588632 1.png" alt="Пряжа">
-                        <h3 class="products-item-name">Пряжа "Gamma" Ирис
-                            100% хлопок 10 г 82 м
-                        </h3>
-                        <select class="products-select" name="products-select" id="products-select">
-                            <option disabled selected value="">Выберите цвет: </option>
-                            <option value="">Белый</option>
-                            <option value="">Синий</option>
-                            <option value="">Красный</option>
-                            <option value="">Черный</option>
-                            <option value="">Фиолетовый</option>
-                        </select>
-                        <div class="products-btns-group">
-                            <button class="products-btn-price">71 ₽/шт</button>
-                            <button class="products-btn-bag"></button>
-
-                        </div>
-                    </li>
-
-                </ul>
-                <button class="products-btn">Показать ещё</button>
-            </div>
-        </div>
-    </section>
+    </div>
 
     <!-- Footer -->
-    <section>
+    <div>
         <footer>
             <div class="footer">
                 <div class="footer-left">
@@ -788,9 +581,11 @@
             </div>
             <div class="footer-copyright">© Все права защищены.</div>
         </footer>
-    </section>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script type="module" src="../script/swiperIni.js"></script>
     <script src="../script/script.js"></script>
 </body>
+
+</html>

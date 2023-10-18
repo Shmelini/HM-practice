@@ -321,6 +321,7 @@
 .products-btn-price {
     margin-right: 10px;
     padding: 15px 35px;
+    width: 172px;
     background-color: #F3CD47;
     border: none;
     border-radius: 3px;
@@ -340,7 +341,7 @@
 }
 
 .products-btn-bag {
-    width: 100px;
+    width: 88px;
     height: 66px;
     background-image: url(../img/shopping-bag.svg);
     background-repeat: no-repeat;

@@ -1,0 +1,246 @@
+.product-section {
+}
+
+.product-card {
+    margin-left: 310px;
+}
+
+.description-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 310px;
+    background: #F1F5F8;
+}
+
+.description-btns-list {
+    display: flex;
+}
+
+.description-btn {
+    padding: 0;
+    font-family: "Amatic SC";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    background: none;
+    border: none;
+    position: relative;
+    z-index: 1;
+}
+
+.description-btn:first-child {
+    margin-right: 60px;
+}
+
+.description-btn:hover::before {
+    content: "";
+    position: absolute;
+    background-color: #f3cd47;
+    border-radius: 10px;
+    width: 100%;
+    height: 17px;
+    top: 33px;
+    z-index: -1;
+}
+
+.description-btn__active::before {
+    content: "";
+    position: absolute;
+    background-color: #f3cd47;
+    border-radius: 10px;
+    width: 100%;
+    height: 17px;
+    top: 33px;
+    z-index: -1;
+}
+
+.description-text-container {
+    width: 750px;
+    margin-top: 10px;
+}
+
+.description-text {
+    display: none;
+    color: #8B8B8B;
+    font-family: Gill Sans Nova;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.text-active {
+    display: block;
+}
+
+.browsing-section {
+    padding-left: 310px;
+}
+
+.browsing-title {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    color: #3D3D3D;
+    font-family: Amatic SC;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.browsing-list {
+    margin-bottom: 116px;
+    display: flex;
+    height: fit-content;
+}
+
+.product-input {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.product-name {
+    width: 793px;
+    color: #3D3D3D;
+    font-family: Gill Sans Nova;
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100px;
+}
+
+.product-info {
+    display: flex;
+}
+
+.swiper-main-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.swiper-product {
+    width: 575px;
+}
+
+.swiper-thumbs {
+    width: 90px;
+    height: 600px;
+}
+
+/* .swiper-thumbs .swiper-wrapper {
+    display: flex;
+    flex-direction: column;
+} */
+
+.swiper-thumbs-slide {
+    width: 90px;
+    opacity: 0.5;
+}
+
+.swiper-thumbs-slide__img {
+    width: 90px;
+}
+
+.swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.swiper-pagination-product {
+    display: none;
+}
+
+.amount {
+    margin-top: 20px;
+}
+
+.amount-name {
+    color: #8B8B8B;
+    font-family: Gill Sans Nova;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.product-vendor-code {
+    margin-top: 91px;
+    margin-bottom: 21px;
+    color: #8B8B8B;
+    font-family: Gill Sans Nova;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.amount-btn-container {
+    margin-top: 10px;
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 64px;
+    background-color: #F1F5F8;
+    border-radius: 3px;
+}
+
+.amount-btn {
+    background: none;
+    border: none;
+    color: #444;
+    font-family: Gill Sans Nova;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.amount-btn:first-child {}
+
+.amount-number {
+    color: #3D3D3D;
+    font-family: Gill Sans Nova;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.product-buy-btns {
+    margin-top: 20px;
+}
+
+.product-btn__buy,
+.product-btn__cart {
+    padding: 22px 35px 22px 35px;
+}
+
+.product-btn__cart {
+    margin-right: 20px;
+    color: #FFF;
+    font-family: Gill Sans Nova;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    border-radius: 3px;
+    background: #193E6B;
+}
+
+.product-btn__buy {
+    color: #3D3D3D;
+    font-family: Gill Sans Nova;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: none;
+    border-radius: 3px;
+    border: 1px solid #F3CD47;
+}

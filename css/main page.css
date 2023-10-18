@@ -240,17 +240,4 @@
     border-radius: 3px;
   }
   
-  .articles-button:hover {
-    background-color: #F9E6A3;
-    border-color: #F9E6A3;
-  }
   
-  .articles-button:focus {
-    background-color: #F1C322;
-    border-color: #F1C322;
-  }
-  
-  .articles-button:disabled {
-    color: #8B8B8B;
-    border-color: #8B8B8B;
-  }
