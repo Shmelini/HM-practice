@@ -105,6 +105,10 @@ header {
   line-height: 30px;
 }
 
+.header-small {
+  display: none;
+}
+
 /* Header top */
 .header-logo {
   margin-top: 36px;
@@ -136,6 +140,9 @@ header {
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
+}
+
+.header-top li {
   margin-right: 20px;
 }
 
@@ -221,6 +228,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 100px;
+  width: 100%;
   background-color: white;
 }
 
@@ -357,7 +365,7 @@ header {
 }
 
 .disabled {
-  display: none;
+  display: none !important;
 }
 
 
@@ -661,6 +669,17 @@ footer {
   background: #f3cd47;
 }
 
+.btn-yellow-border {
+  padding: 16px 35px;
+  background-color: #FFFFFF;
+  border: 1px solid #F3CD47;
+  border-radius: 3px;
+  font-family: "Gill Sans Nova";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
 .btn-yellow-border:hover {
   background-color: #F9E6A3;
   border-color: #F9E6A3;
@@ -674,4 +693,90 @@ footer {
 .btn-yellow-border:disabled {
   color: #8B8B8B;
   border-color: #8B8B8B;
+}
+
+
+/* Adaptive */
+@media screen and (max-width: 768px) {
+  .header-small {
+    display: block;
+  }
+
+  .header-big {
+    display: none;
+  }
+
+  .header-top {
+    align-items: inherit;
+    justify-content: inherit;
+  }
+
+
+  .header-logo {
+    margin-top: 0;
+    height: 100px;
+  }
+
+
+
+  .header-small__cntr {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .search-input {
+    width: 203px;
+  }
+
+  .search-select {
+    width: 155px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .burger {
+    margin-top: 18px;
+    margin-right: 36px;
+    margin-left: 20px;
+    background: none;
+    border: none;
+  }
+
+  .burger-menu {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: start;
+    background: #FFF3CA;
+    width: fit-content;
+  }
+
+  .burger-menu .header-links-left a {
+    margin: 5px;
+    color: black;
+  }
+
+  .header-button {
+    width: 167px;
+    margin-right: 20px;
+  }
+
+  .header-bottom-nav {
+    display: none;
+  }
+
+  .header-catalog,
+  .header-spoiler-button {
+    width: 100%;
+  }
+
+  .header-contacts li {
+    margin-right: 37px;
+    width: max-content;
+  }
+
+
 }

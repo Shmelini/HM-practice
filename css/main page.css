@@ -1,243 +1,289 @@
 /* Hero */
 .hero-section {
-    height: 690px;
-  }
-  
-  .swiper-hero {
-    margin-top: 64px;
-    margin-bottom: 150px;
-    width: 1300px;
-    height: 590px;
-  }
-  
-  .slider-text {
-    position: absolute;
-    top: 166px;
-    left: 222px;
-    font-family: "Amatic SC";
-    font-size: 88px;
-    font-weight: 700;
-    line-height: 111px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #ffffff;
-  }
-  
-  .slider-button {
-    position: absolute;
-    top: 317px;
-    right: 770px;
-    width: 310px;
-    height: 70px;
-    background-color: #f3cd47;
-    font-family: "Gill Sans Nova";
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 26px;
-    border: none;
-  }
-  
-  .swiper-hero__prev::after,
-  .swiper-hero__next::after {
-    color: white;
-  }
-  
-  .swiper-pagination-bullet:hover {
-    background-color: #F9E6A3;
-  }
-  
-  .swiper-pagination-bullet-active {
-    background-color: #f3cd47 !important;
-  }
-  
-  /* Catalog */
-  .catalog-section {
-    padding-bottom: 55px;
-    background-color: #f1f5f8;
-    width: 100%;
-  }
-  
-  .catalog-container {
-    display: flex;
-    flex-direction: row;
-    margin-left: 310px;
-  }
-  
-  .catalog-button {
-    padding: 0;
-    margin-top: 100px;
-    font-family: "Amatic SC";
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 50px;
-    background: none;
-    border: none;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .catalog-button:focus::before {
-    content: "";
-    position: absolute;
-    background-color: #f3cd47;
-    border-radius: 10px;
-    width: 100%;
-    height: 17px;
-    top: 33px;
-    z-index: -1;
-  }
-  
-  .catalog-button:nth-child(1) {
-    margin-right: 40px;
-  }
-  
-  .catalog-items-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    margin-left: 310px;
+  height: 690px;
+}
+
+.swiper-hero {
+  margin-top: 64px;
+  margin-bottom: 150px;
+  width: 1300px;
+  height: 590px;
+}
+
+.slider-text {
+  position: absolute;
+  top: 166px;
+  left: 222px;
+  font-family: "Amatic SC";
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 111px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.slider-button {
+  position: absolute;
+  top: 317px;
+  right: 770px;
+  width: 310px;
+  height: 70px;
+  background-color: #f3cd47;
+  font-family: "Gill Sans Nova";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  border: none;
+}
+
+.swiper-hero__prev::after,
+.swiper-hero__next::after {
+  color: white;
+}
+.swiper-hero__prev::after:hover,
+.swiper-hero__next::after:hover {
+  color: #F9E6A3;
+}
+
+.swiper-pagination-bullet:hover {
+  background-color: #F9E6A3;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #f3cd47 !important;
+}
+
+/* Catalog */
+.catalog-section {
+  padding-bottom: 55px;
+  background-color: #f1f5f8;
+  width: 100%;
+}
+
+.catalog-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 310px;
+}
+
+.catalog-button {
+  padding: 0;
+  margin-top: 100px;
+  font-family: "Amatic SC";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  background: none;
+  border: none;
+  position: relative;
+  z-index: 1;
+}
+
+.catalog-button:focus::before {
+  content: "";
+  position: absolute;
+  background-color: #f3cd47;
+  border-radius: 10px;
+  width: 100%;
+  height: 17px;
+  top: 33px;
+  z-index: -1;
+}
+
+.catalog-button:nth-child(1) {
+  margin-right: 40px;
+}
+
+.catalog-items-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-left: 310px;
+}
+
+.catalog-items-list a {
+  text-decoration: none;
+  color: #3D3D3D;
+}
+
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  margin-right: 20px;
+  margin-bottom: 45px;
+}
+
+.catalog-img-item-container {
+  width: 310px;
+  height: 300px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.catalog-img-item-container:hover {
+  box-shadow: 0px 25px 45px -16px rgba(25, 62, 107, 0.25);
+}
+
+.catalog-item-img {
+  padding-top: 60px;
+  padding-left: 61px;
+  width: 188px;
+  height: 179px;
+}
+
+.catalog-item-title {
+  margin-top: 15px;
+  font-family: "Gill Sans Nova";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+}
+
+/* Useful articles */
+.articles-section {
+  height: 943px;
+}
+
+.articles-main-title {
+  margin-bottom: 40px;
+  font-family: "Amatic SC";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.articles-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.swiper-articles {
+  height: 630px;
+  margin-top: 100px;
+  margin-right: 310px !important;
+  margin-left: 310px !important;
+}
+
+.swiper-articles-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swiper-articles-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.swiper-articles-button__prev {
+  margin-right: 35px;
+}
+
+.swiper-articles-button__prev,
+.swiper-articles-button__next {
+  position: static;
+}
+
+.swiper-articles-button__prev::after,
+.swiper-articles-button__next::after {
+  content: '';
+  background-image: url(../img/chevron-left.svg);
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  position: relative;
+}
+
+.swiper-articles-button__prev::after {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.swiper-articles-slide {
+  width: 640px !important;
+}
+
+.swiper-articles-slide__image {
+  border-radius: 3px;
+}
+
+.swiper-articles-slide__title {
+  font-family: "Gill Sans Nova";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+
+}
+
+.swiper-articles-slide__text {
+  font-family: "Gill Sans Nova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.swiper-articles-pagination {
+  width: max-content !important;
+  margin-left: 605.5px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+.articles-button {
+  width: 10px;
+  height: 10px;
+}
+
+/* Adaptive */
+@media screen and (max-width: 768px) {
+  .hero-section{
+    height: 680px;
   }
 
-  .catalog-items-list a {
-    text-decoration: none;
-    color: #3D3D3D;
+  .hero-section .swiper-hero {
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
   }
-  
-  .catalog-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: max-content;
-    margin-right: 20px;
-    margin-bottom: 45px;
+
+  .swiper-hero__next,
+  .swiper-hero__prev {
+    display: none;
   }
-  
+
+  .swiper-hero__slide img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+  }
+
+  .slider-text {
+    top: 159px;
+    left: 20px;
+    font-size: 88px;
+    line-height: normal;
+  }
+
+  .slider-button {
+    left: 20px;
+    top: 300px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    top: 590px;
+  }
+
+  .catalog-container,
+  .catalog-items-list {
+    margin-left: 20px;
+  }
+
   .catalog-img-item-container {
-    width: 310px;
-    height: 300px;
-    background-color: white;
-    border-radius: 2px;
+    width: 354px;
   }
-  
-  .catalog-img-item-container:hover {
-    box-shadow: 0px 25px 45px -16px rgba(25, 62, 107, 0.25);
-  }
-  
-  .catalog-item-img {
-    padding-top: 60px;
-    padding-left: 61px;
-    width: 188px;
-    height: 179px;
-  }
-  
-  .catalog-item-title {
-    margin-top: 15px;
-    font-family: "Gill Sans Nova";
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0em;
-  }
-  
-  /* Useful articles */
-  .articles-section {
-    height: 943px;
-  }
-  
-  .articles-main-title {
-    margin-bottom: 40px;
-    font-family: "Amatic SC";
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 50px;
-  }
-  
-  .swiper-articles {
-    height: 630px;
-    margin-top: 100px;
-    margin-right: 310px !important;
-    margin-left: 310px !important;
-  }
-  
-  .swiper-articles-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .swiper-articles-nav {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .swiper-articles-button__prev {
-    margin-right: 35px;
-  }
-  
-  .swiper-articles-button__prev,
-  .swiper-articles-button__next {
-    position: static;
-  }
-  
-  .swiper-articles-button__prev::after,
-  .swiper-articles-button__next::after {
-    content: '';
-    background-image: url(../img/chevron-left.svg);
-    background-repeat: no-repeat;
-    width: 32px;
-    height: 32px;
-    display: inline-block;
-    position: relative;
-  }
-  
-  .swiper-articles-button__prev::after {
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-  }
-  
-  .swiper-articles-slide {
-    width: 640px !important;
-  }
-  
-  .swiper-articles-slide__image {
-    border-radius: 3px;
-  }
-  
-  .swiper-articles-slide__title {
-    font-family: "Gill Sans Nova";
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 35px;
-  
-  }
-  
-  .swiper-articles-slide__text {
-    font-family: "Gill Sans Nova";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-  }
-  
-  .swiper-articles-pagination {
-    width: max-content !important;
-    margin-left: 615px;
-  }
-  
-  .swiper-articles-pagination .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-  }
-  
-  .articles-button {
-    margin-top: 30px;
-    margin-left: 859px;
-    padding: 16px 35px;
-    font-family: "Gill Sans Nova";
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 26px;
-    background-color: white;
-    border: 1px solid #F3CD47;
-    border-radius: 3px;
-  }
-  
-  
+
+}

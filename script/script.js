@@ -4,6 +4,8 @@ let coreSpoilerTriggers = document.querySelectorAll('.core-spoiler-trigger')
 let coreSpoiler = document.querySelector('.core-spoiler')
 let sortBtns = document.querySelectorAll('.sort-btn')
 let textChangeBtns = document.querySelectorAll('.description-btn')
+let brgBtn = document.querySelector('.burger')
+let brgMenu = document.querySelector('.burger-menu')
 
 // функционал смены текста
 function textChanging(event) {
@@ -59,4 +61,10 @@ function sortColorChange (event) {
 
 sortBtns.forEach(function (sortBtn) {
    sortBtn.addEventListener('click', sortColorChange)
+})
+
+// бургер меню для шапки
+brgBtn.addEventListener('click', () => {
+   brgMenu.classList.toggle('disabled')
+
 })

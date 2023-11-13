@@ -1,3 +1,5 @@
+
+// Hero swiper
 const swiperHero = new Swiper('.swiper-hero', {
    // Optional parameters
    direction: 'horizontal',
@@ -6,6 +8,7 @@ const swiperHero = new Swiper('.swiper-hero', {
    // If we need pagination
    pagination: {
       el: '.swiper-hero__pagination',
+      clickable: true
    },
 
    // Navigation arrows
@@ -15,14 +18,23 @@ const swiperHero = new Swiper('.swiper-hero', {
    },
 });
 
+// Articles swiper
 const swiperArticles = new Swiper('.swiper-articles', {
    // Optional parameters
    direction: 'horizontal',
    loop: true,
 
+   breakpoints: {
+      768: {
+         slidesPerView: 1
+      }
+   },
+   
+
    // If we need pagination
    pagination: {
       el: '.swiper-articles-pagination',
+      clickable: true
    },
 
    // Navigation arrows
@@ -37,6 +49,8 @@ const swiperArticles = new Swiper('.swiper-articles', {
 
 });
 
+
+// Product swiper
 const swiperThumbs = new Swiper('.swiper-thumbs', {
    direction: 'vertical',
    spaceBetween: 10,
