@@ -108,11 +108,24 @@
     }
 
     .contacts-adress {
+        margin-bottom: 0;
         flex-direction: column-reverse;
     }
 
     .contacts-info {
         background: none;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 80px;
+    }
+
+    .contacts-list {
+        display: flex;
+        gap: 79px;
+    }
+
+    .contacts-list-item {
+        width: max-content;
     }
 
     .map-container {
