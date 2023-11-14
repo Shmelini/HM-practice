@@ -89,3 +89,11 @@
 .text-group-btn {
     margin-top: 40px;
 }
+
+/* Adaptive */
+@media screen and (max-width: 768px) {
+    .text-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

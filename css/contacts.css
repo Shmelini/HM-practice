@@ -28,6 +28,10 @@
     background-color: #F1F5F8;
 }
 
+.map-container {
+    width: 860px;
+}
+
 .contacts-list {
     margin-top: 20px;
     margin-left: 30px;
@@ -90,4 +94,30 @@
 
 .contacts-social-links__instagram::before {
     background-image: url(../img/Instagram-contacts.svg);
+}
+
+/* Adaptive */
+@media screen and (max-width: 768px) {
+    .contacts-container {
+        margin-left: 0;
+    }
+
+    .contacts-section-title {
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
+    .contacts-adress {
+        flex-direction: column-reverse;
+    }
+
+    .contacts-info {
+        background: none;
+    }
+
+    .map-container {
+        width: 100%;
+    }
+
+
 }

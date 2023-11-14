@@ -516,7 +516,6 @@ footer {
   justify-content: space-between;
   margin-left: 310px;
   margin-right: 310px;
-  height: 392px;
 }
 
 .footer a {
@@ -646,10 +645,13 @@ footer {
 
 .footer-links ul {
   margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .footer-links li {
-  margin-top: 15px;
+  /* margin-top: 15px; */
   font-family: "Amatic SC";
   font-size: 24px;
   font-weight: 700;
@@ -659,6 +661,7 @@ footer {
 }
 
 .footer-copyright {
+  margin-top: 40px;
   padding-top: 8px;
   padding-bottom: 9px;
   text-align: center;
@@ -695,6 +698,10 @@ footer {
   border-color: #8B8B8B;
 }
 
+.footer-small {
+  display: none;
+}
+
 
 /* Adaptive */
 @media screen and (max-width: 768px) {
@@ -705,6 +712,9 @@ footer {
   .header-big {
     display: none;
   }
+
+  
+ 
 
   .header-top {
     align-items: inherit;
@@ -752,10 +762,16 @@ footer {
     align-items: start;
     background: #FFF3CA;
     width: fit-content;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  
+  .burger-menu .header-links-left {
+    padding: 5px;
   }
 
   .burger-menu .header-links-left a {
-    margin: 5px;
+    font-size: 1.2em;
     color: black;
   }
 
@@ -778,5 +794,66 @@ footer {
     width: max-content;
   }
 
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-small {
+    display: block;
+  }
+
+  .footer-big {
+    display: none;
+  }
+
+  .footer {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .footer-logo-container {
+    margin: auto;
+  }
+
+  .footer-middle {
+    display: flex;
+    flex-direction: row;
+    gap: 96px;
+  }
+
+  .footer-catalogue,
+  .footer-help,
+  .footer-links {
+    margin-top: 0;
+  }
+
+  .footer-links ul{
+    margin-top: 0;
+  }
+  
+  .footer-contacts {
+    margin: auto;
+    width: max-content;
+  }
+
+  .footer-contacts-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .footer-contacts-info li {
+    width: fit-content;
+  }
+
+  .footer-social-links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cross-page-nav {
+    display: none;
+  }
 
 }

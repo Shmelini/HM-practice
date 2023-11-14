@@ -23,14 +23,7 @@ const swiperArticles = new Swiper('.swiper-articles', {
    // Optional parameters
    direction: 'horizontal',
    loop: true,
-
-   breakpoints: {
-      768: {
-         slidesPerView: 1
-      }
-   },
    
-
    // If we need pagination
    pagination: {
       el: '.swiper-articles-pagination',
@@ -42,10 +35,18 @@ const swiperArticles = new Swiper('.swiper-articles', {
       nextEl: '.swiper-articles-button__next',
       prevEl: '.swiper-articles-button__prev',
    },
-   slidesPerView: 2,
-   spaceBetween: 20,
    loop: false,
    simulateTouch: false,
+   breakpoints: {
+      768: {
+         slidesPerView: 1,
+         spaceBetween: 10,
+      },
+      1920: {
+         slidesPerView: 2,
+         spaceBetween: 20
+      }
+   },
 
 });
 

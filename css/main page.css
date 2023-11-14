@@ -46,13 +46,23 @@
   color: #F9E6A3;
 }
 
-.swiper-pagination-bullet:hover {
+.swiper-articles>.swiper-pagination>.swiper-pagination-bullet,
+.swiper-hero>.swiper-pagination>.swiper-pagination-bullet {
+  background-color: #ADC4E0;
+  opacity: 1;
+}
+
+.swiper-articles>.swiper-pagination>.swiper-pagination-bullet:hover,
+.swiper-hero>.swiper-pagination>.swiper-pagination-bullet:hover {
   background-color: #F9E6A3;
 }
 
-.swiper-pagination-bullet-active {
-  background-color: #f3cd47 !important;
+.swiper-articles>.swiper-pagination>.swiper-pagination-bullet-active,
+.swiper-hero>.swiper-pagination>.swiper-pagination-bullet-active {
+  background-color: #f3cd47;
 }
+
+
 
 /* Catalog */
 .catalog-section {
@@ -162,11 +172,11 @@
   margin-top: 40px;
 }
 
-.swiper-articles {
+.articles-section .swiper-articles {
   height: 630px;
   margin-top: 100px;
-  margin-right: 310px !important;
-  margin-left: 310px !important;
+  margin-right: 310px;
+  margin-left: 310px;
 }
 
 .swiper-articles-top {
@@ -204,8 +214,8 @@
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-.swiper-articles-slide {
-  width: 640px !important;
+.swiper-articles-wrapper .swiper-articles-slide {
+  width: 640px;
 }
 
 .swiper-articles-slide__image {
@@ -221,16 +231,14 @@
 }
 
 .swiper-articles-slide__text {
+  color: #8B8B8B;
   font-family: "Gill Sans Nova";
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
 }
 
-.swiper-articles-pagination {
-  width: max-content !important;
-  margin-left: 605.5px;
-}
+
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
 .articles-button {
@@ -273,10 +281,6 @@
     top: 300px;
   }
 
-  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    top: 590px;
-  }
-
   .catalog-container,
   .catalog-items-list {
     margin-left: 20px;
@@ -284,6 +288,24 @@
 
   .catalog-img-item-container {
     width: 354px;
+  }
+
+  .articles-section .swiper-articles {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .swiper-articles-wrapper .swiper-articles-slide {
+    width: 100%;
+  }
+
+  .swiper-articles-slide .swiper-articles-slide__image {
+    width: 100%;
+  }
+
+  .swiper-articles .swiper-articles-button__next,
+  .swiper-articles .swiper-articles-button__prev {
+    display: none;
   }
 
 }

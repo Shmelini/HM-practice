@@ -59,11 +59,13 @@
 
 .products-section {
     padding-top: 100px;
+    padding-bottom: 100px;
     background-color: #F1F5F8;
 }
 
 .products-container {
     margin-left: 310px;
+    margin-right: 310px;
 }
 
 .products-section-title {
@@ -80,14 +82,13 @@
 .products-section-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .products-section-item {
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
     padding-left: 20px;
-    margin-bottom: 21px;
     width: 290px;
     background-color: #FFFFFF;
 }
@@ -131,7 +132,7 @@
 
 .products-btn-price {
     margin-right: 10px;
-    padding: 15px 35px;
+    padding: 15px 29px;
     background-color: #F3CD47;
     border: none;
     border-radius: 3px;
@@ -153,7 +154,7 @@
 .products-btn-bag {
     width: 100px;
     height: 66px;
-    background-image: url(../img/shopping-bag.svg); 
+    background-image: url(../img/shopping-bag.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #193E6B;
@@ -163,9 +164,8 @@
 }
 
 .products-btn {
-    margin-top: 10px;
-    margin-bottom: 100px;
-    margin-left: 563px;
+    display: block;
+    margin: 40px auto 0px auto;
     padding: 22px 35px;
     font-family: "Gill Sans Nova";
     font-size: 18px;
@@ -188,4 +188,46 @@
 .products-btn:disabled {
     color: #8B8B8B;
     border-color: #8B8B8B;
+}
+
+/* Adaptive */
+@media screen and (max-width: 768px) {
+    .catalog-container {
+        margin-left: 20px;
+    }
+
+    .catalog-section-title {
+        margin-top: 40px;
+    }
+
+    .catalog-img-item-container {
+        width: 354px;
+    }
+
+    .products-section {
+        padding-bottom: 80px;
+    }
+
+    .products-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .products-section-item {
+        width: 314px;
+        padding-right: 20px;
+    }
+
+    .products-select {
+        width: 100%;
+    }
+
+    .products-btn-price {
+        padding: 15px 51px;
+    }
+
+    .products-btn {
+        display: block;
+        margin: 40 auto 0px auto;
+    }
 }
