@@ -65,6 +65,7 @@ const swiperProduct = new Swiper('.swiper-product', {
    spaceBetween: 10,
    pagination: {
       el: '.swiper-pagination-product',
+      clickable: true
    },
    thumbs: {
       swiper: swiperThumbs,

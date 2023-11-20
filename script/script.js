@@ -1,4 +1,4 @@
-let button = document.querySelector('.header-spoiler-button')
+let buttons = document.querySelectorAll('.header-spoiler-button')
 let spoilerMenu = document.querySelector('.header-menu-container')
 let coreSpoilerTriggers = document.querySelectorAll('.core-spoiler-trigger')
 let coreSpoiler = document.querySelector('.core-spoiler')
@@ -30,9 +30,17 @@ textChangeBtns.forEach(function (textChangeBtn) {
 })
 
 // открытие меню с категориями
-button.addEventListener('click', () => {
-   spoilerMenu.classList.toggle('disabled')
 
+function burger(event) {
+   event.preventDefault()
+   
+   const target = event.target.nextElementSibling
+   target.classList.toggle('disabled')
+   console.log(target)
+}
+
+buttons.forEach(function (button) {
+   button.addEventListener('click', burger)
 })
 
 
@@ -65,6 +73,6 @@ sortBtns.forEach(function (sortBtn) {
 
 // бургер меню для шапки
 brgBtn.addEventListener('click', () => {
-   brgMenu.classList.toggle('disabled')
+   brgMenu.classList.toggle('burger-closed')
 
 })

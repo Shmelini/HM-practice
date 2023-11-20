@@ -223,14 +223,20 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 10px;
 }
 
 .sort-btns div {
     color: #8B8B8B;
+    font-family: Gill Sans Nova;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .sort-btn {
-    margin-left: 10px;
+    
     padding: 9px 15px 11px 15px;
     font-family: "Gill Sans Nova";
     font-size: 18px;
@@ -269,15 +275,16 @@
 .products-section-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .products-section-item {
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
+    align-items: center;
     padding-left: 20px;
-    margin-bottom: 21px;
-    width: 290px;
+    padding-right: 20px;
+    width: 270px;
     background-color: #FFFFFF;
 }
 
@@ -300,7 +307,7 @@
 .products-select {
     margin-top: 20px;
     padding-left: 15px;
-    width: 270px;
+    width: 100%;
     height: 50px;
     font-family: "Gill Sans Nova";
     font-size: 18px;
@@ -378,4 +385,70 @@
 .products-btn:disabled {
     color: #8B8B8B;
     border-color: #8B8B8B;
+}
+
+/* Adaptive */
+@media screen and (max-width: 768px) {
+    .products-container {
+        margin-left: 20px;
+    }
+
+    .products-section-title {
+        margin-top: 40px;
+    }
+
+    .catalog-container {
+        flex-direction: column;
+    }
+
+    .settings-container {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        gap: 20px;
+    }
+
+    .setting-block {
+        width: 354px;
+        height: min-content;
+        margin-bottom: 0;
+
+    }
+
+    .settings-list {
+        position: relative;
+        z-index: 10;
+    }
+
+    .setting-name {
+        justify-content: center;
+    }
+
+    .setting-name::after {
+        top: 5px;
+    }
+
+    .setting-button {
+        display: block;
+        margin: auto;
+    }
+
+    .sort-btns {
+        margin-top: 40px;
+        flex-wrap: wrap;
+        max-width: 700px;
+        
+    }
+
+    .products-section-item {
+        width: 314px;
+    }
+
+    .products-btn-price {
+        width: 216px;
+    }
+
+    .products-btn {
+        margin-left: 277px;
+    }
+    
 }
