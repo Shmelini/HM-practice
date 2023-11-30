@@ -128,3 +128,20 @@
   }
 
 }
+
+@media screen and (max-width: 375px) {
+  .text-section-title {
+    font-size: 56px;
+    line-height: 60px;
+  }
+  
+  .text-section-select ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-section-menu-btn {
+    width: 335px;
+    height: 80px;
+  }
+}

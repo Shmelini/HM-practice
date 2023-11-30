@@ -231,3 +231,26 @@
         margin: 40 auto 0px auto;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .catalog-section-title {
+        font-size: 56px;
+        line-height: 60px;
+    }
+
+    .catalog-img-item-container {
+        width: 335px;
+    }
+
+    .products-section-title {
+        font-size: 32px;
+    }
+
+    .products-section-item {
+        width: 295px;
+    }
+
+    .products-btn-price {
+        padding: 15px 41px;
+    }
+}

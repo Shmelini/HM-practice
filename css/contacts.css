@@ -134,3 +134,19 @@
 
 
 }
+
+@media screen and (max-width: 375px) {
+    .contacts-section-title {
+        font-size: 56px;
+        line-height: 60px;
+    }
+
+    .contacts-list {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .contacts-list-item {
+        margin-bottom: 0;
+    }
+}

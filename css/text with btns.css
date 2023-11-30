@@ -68,7 +68,8 @@
 }
 
 .text-page-btn {
-    padding: 16px 35px;
+    width: 168px;
+    height: 58px;
     background-color: #FFFFFF;
     border: 1px solid #F3CD47;
     border-radius: 3px;
@@ -95,5 +96,27 @@
     .text-container {
         margin-left: 20px;
         margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .text-section-title {
+        font-size: 56px;
+        line-height: 60px;
+    }
+
+    .text-section-paragraph-group {
+        width: auto;
+    }
+
+    .text-group-btn {
+        display: flex;
+        
+    }
+
+    .text-page-btn {
+        width: 158px;
+        height: 58px;
+        padding: auto;
     }
 }

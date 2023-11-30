@@ -452,3 +452,28 @@
     }
     
 }
+
+@media screen and (max-width: 375px) {
+    .products-section-title {
+        font-size: 52px;
+        line-height: 60px;
+        margin-bottom: 30px;
+    }
+
+    .settings-container {
+        grid-template-columns: repeat(1, max-content);
+    }
+
+    .setting-block {
+        width: 335px;
+    }
+
+    .products-section-item {
+        width: 295px;
+    }
+
+    .products-btn {
+        margin-top: 30px;
+        margin-left: 81px;
+    }
+}
