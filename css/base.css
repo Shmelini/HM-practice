@@ -191,8 +191,6 @@ header {
 .header-button {
   height: 50px;
   width: 200px;
-  left: 1710px;
-  top: 5px;
   font-family: "Gill Sans Nova";
   font-weight: 400;
   font-size: 16px;
@@ -205,7 +203,9 @@ header {
 }
 
 .header-bottom-nav {
+  width: 100%;
   display: flex;
+  justify-content: space-around;
 }
 
 .header-bottom-nav a:hover {
@@ -367,12 +367,16 @@ header {
   font-family: "Gill Sans Nova";
 }
 
+.header-bottom nav {
+  width: 100%;
+}
+
 .header-spoiler-button {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-right: 27px;
+  
   height: 60px;
   width: 200px;
   border: none;
@@ -391,16 +395,15 @@ header {
 .header-bottom-nav a {
   text-decoration: none;
   color: #ffffff;
-  margin-right: 20px;
   font-family: "Gill Sans Nova";
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
 }
 
-.header-bottom-nav a:nth-child(7) {
+/* .header-bottom-nav a:nth-child(7) {
   margin-right: 13px;
-}
+} */
 
 .b1,
 .b2,
@@ -562,8 +565,8 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 310px;
-  margin-right: 310px;
+  margin-left: 16%;
+  margin-right: 16%;
 }
 
 .footer a {
@@ -752,6 +755,12 @@ footer {
 
 
 /* Adaptive */
+@media screen and (max-width: 1024px) {
+  
+}
+
+
+
 @media screen and (max-width: 768px) {
   .header-small {
     display: block;
@@ -767,6 +776,10 @@ footer {
   .header-top {
     align-items: inherit;
     justify-content: inherit;
+  }
+
+  .header-bottom nav {
+    display: none;
   }
 
 
@@ -917,10 +930,11 @@ footer {
 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 425px) {
   .header-top {
     justify-content: space-between;
   }
+  
 
   .header-contacts li:not(:last-of-type),
   .header-contacts button {

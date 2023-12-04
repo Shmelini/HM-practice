@@ -129,7 +129,31 @@
 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  .text-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .text-section-main-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-section-title {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .text-section-content {
+    align-items: center;
+  }
+
+  .text-section-select {
+    display: flex;
+    flex-direction: column;
+  }
+  
   .text-section-title {
     font-size: 56px;
     line-height: 60px;
@@ -143,5 +167,11 @@
   .text-section-menu-btn {
     width: 335px;
     height: 80px;
+  }
+
+  .text-section-paragraph-group {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
   }
 }

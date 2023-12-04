@@ -330,7 +330,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 425px) {
     
     .product-card {
         margin-top: 30px;
@@ -397,6 +397,18 @@
 
     .description-text-container {
         width: 335px;
+    }
+
+    .browsing-section {
+        padding-left: 0;
+    }
+
+    .browsing-title {
+        margin-left: 20px;
+    }
+
+    .browsing-list {
+        justify-content: center;
     }
 
     .products-btn-price {

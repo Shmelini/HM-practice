@@ -1,19 +1,21 @@
 /* Hero */
 .hero-section {
   height: 690px;
+  margin-left: 16%;
+  margin-right: 16%;
 }
 
 .swiper-hero {
   margin-top: 64px;
   margin-bottom: 150px;
-  width: 1300px;
+  width: 100%;
   height: 590px;
 }
 
 .slider-text {
   position: absolute;
   top: 166px;
-  left: 222px;
+  margin-left: 16%;
   font-family: "Amatic SC";
   font-size: 88px;
   font-weight: 700;
@@ -26,7 +28,7 @@
 .slider-button {
   position: absolute;
   top: 317px;
-  right: 770px;
+  margin-left: 16%;
   width: 310px;
   height: 70px;
   background-color: #f3cd47;
@@ -41,6 +43,7 @@
 .swiper-hero__next::after {
   color: white;
 }
+
 .swiper-hero__prev::after:hover,
 .swiper-hero__next::after:hover {
   color: #F9E6A3;
@@ -74,7 +77,7 @@
 .catalog-container {
   display: flex;
   flex-direction: row;
-  margin-left: 310px;
+  margin-left: 16%;
 }
 
 .catalog-button {
@@ -109,7 +112,9 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
-  margin-left: 310px;
+  margin-left: 16%;
+  margin-right: 16%;
+  gap: 30px 20px;
 }
 
 .catalog-items-list a {
@@ -122,8 +127,6 @@
   flex-direction: column;
   align-items: center;
   width: max-content;
-  margin-right: 20px;
-  margin-bottom: 45px;
 }
 
 .catalog-img-item-container {
@@ -175,8 +178,8 @@
 .articles-section .swiper-articles {
   height: 630px;
   margin-top: 100px;
-  margin-right: 310px;
-  margin-left: 310px;
+  margin-right: 16%;
+  margin-left: 16%;
 }
 
 .swiper-articles-top {
@@ -240,16 +243,18 @@
 
 
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
-.articles-button {
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet .articles-button {
   width: 10px;
   height: 10px;
 }
 
 /* Adaptive */
 @media screen and (max-width: 768px) {
-  .hero-section{
+  .hero-section {
     height: 680px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .hero-section .swiper-hero {
@@ -281,9 +286,15 @@
     top: 300px;
   }
 
+  .slider-button,
+  .slider-text {
+    margin-left: 0;
+  }
+
   .catalog-container,
   .catalog-items-list {
     margin-left: 20px;
+    margin-right: 20px;
   }
 
   .catalog-button {
@@ -314,53 +325,62 @@
 
 }
 
-@media screen and (max-width: 375px) {
-    .slider-text {
-      top: 104px;
-      width: 317px;
-      font-size: 56px;
-    }
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  .slider-text {
+    top: 104px;
+    width: 317px;
+    font-size: 56px;
+  }
 
-    .slider-button {
-      width: 335px;
-    }
+  .slider-button {
+    width: 335px;
+  }
 
-    .swiper-hero>.swiper-hero__pagination {
-      bottom: 73px;
-    }
+  .swiper-hero>.swiper-hero__pagination {
+    bottom: 73px;
+  }
 
-    .catalog-button {
-      margin-top: 60px;
-      width: max-content;
-      font-size: 32px;
-    }
+  .catalog-button {
+    margin-top: 60px;
+    width: max-content;
+    font-size: 32px;
+  }
 
-    .catalog-container {
-      justify-content: space-between;
-    }
+  .catalog-container {
+    justify-content: space-between;
+    gap: 50px;
+  }
+  
 
-    .catalog-container li:first-of-type {
-      margin-right: 0;
-    }
+  .catalog-container,
+  .catalog-items-list {
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+  }
 
-    .catalog-container li:last-of-type {
-      margin-right: 20px;
-    }
+  .catalog-container li:first-of-type {
+    margin-right: 0;
+  }
 
-    .catalog-img-item-container {
-      width: 335px;
-    }
+  .catalog-container li:last-of-type {
+    margin-right: 0;
+  }
 
-    .swiper-articles-slide .swiper-articles-slide__image {
-      height: 300px;
-      object-fit: cover;
-    }
-    
-    .articles-section .swiper-articles {
-      height: 730px;
-    }
+  .catalog-img-item-container {
+    width: 335px;
+  }
 
-    .swiper-articles .swiper-articles-pagination {
-      bottom: -2px;
-    }
+  .swiper-articles-slide .swiper-articles-slide__image {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .articles-section .swiper-articles {
+    height: 730px;
+  }
+
+  .swiper-articles .swiper-articles-pagination {
+    bottom: -2px;
+  }
 }

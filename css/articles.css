@@ -1,6 +1,6 @@
 .articles-container {
-    margin-right: 290px;
-    margin-left: 310px;
+    margin-right: 12%;
+    margin-left: 16%;
 }
 
 .articles-container a {
@@ -87,8 +87,8 @@
 /* Adaptive */
 @media screen and (max-width: 768px) {
     .articles-container {
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-right: 0;
+        margin-left: 0;
     }
     
     .articles-section-list li {
@@ -102,10 +102,15 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 425px) {
     .articles-section-title {
+        margin-left: 20px;
         font-size: 56px;
         line-height: 60px;
+    }
+
+    .articles-section-list {
+        justify-content: center;
     }
 
     .articles-img {

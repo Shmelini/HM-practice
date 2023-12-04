@@ -99,7 +99,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 425px) {
     .text-section-title {
         font-size: 56px;
         line-height: 60px;
