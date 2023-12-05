@@ -90,7 +90,9 @@
 .browsing-list {
     margin-bottom: 116px;
     display: flex;
+    flex-wrap: wrap;
     height: fit-content;
+
 }
 
 .product-input {
